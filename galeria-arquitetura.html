@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard Ryan - Portfolio</title>
+  <meta name="description"
+    content="Hello there, I'm Sophia Williams – an intrepid explorer through the lens, on a relentless quest to capture the world's boundless wonders. Join me in unraveling the extraordinary through my lens as I embark on a visual journey like no other.">
+   <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="dist/output.css" />
+   <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- Start - Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+  <!-- End - Fonts -->
+  <!-- Start - Fancybox Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!-- End - Fancybox Scripts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      content: ["./dist/*.{html,js}"],
+      theme: {
+        extend:
+                {
+                  fontFamily: {
+                    'nothingyoucoulddo': ['Nothing You Could Do', 'cursive'],
+                    'signika': ['Signika', 'sans-serif'],
+                  },
+                },
+      },
+      plugins: [],
+    }
+  </script>
+</head>
+
+<body class="active" id="top">
+
+   <!-- 
+    -#PRELOADING
+  -->
+
+  <div class="loading" data-loading>
+    <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+  <!-- Navbar -->
+   <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="/index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="40" height="40" alt="Richard home">
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/nav-logo.svg" width="140" height="40" alt="Richard home" class="img">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <span class="span one"></span>
+            <span class="span two"></span>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/index.html#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#gallery" class="navbar-link" data-nav-link>Galeria</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#about" class="navbar-link" data-nav-link>Sobre</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#services" class="navbar-link" data-nav-link>Serviços</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#contact" class="navbar-link" data-nav-link>Contato</a>
+          </li>
+
+        </ul>
+
+        <p class="navbar-title">Meu Endereço</p>
+
+        <address class="navbar-text">
+          3287 Teresina, PI, Brasil
+        </address>
+
+        <p class="navbar-text">
+          Contato
+          <a href="tel:8085613846" class="contact-link">(86)85613846</a>
+        </p>
+
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <section  class="section hero" id="home" aria-label="home">
+    <div class="container w-full">
+      <h1 class="text-4xl pt-10 pb-8 font-bold">ARQUITETURA URBANA</h1>
+      <div class="flex flex-wrap -mx-1">
+        <div class="w-full md:w-1/2 lg:w-1/4 p-1">
+          <div class="overflow-hidden h-full w-full">
+            <a href="./assets/images/arquitetura/casa1.jpg" data-fancybox="gallery">
+              <img alt="a person standing in front of a rock formation"
+                class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                src="./assets/images/arquitetura/casa1.jpg" />
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 p-1">
+          <div class="overflow-hidden h-full w-full">
+            <a href="./assets/images/arquitetura/casa2.jpg" data-fancybox="gallery">
+              <img alt="a cat laying on top of a sidewalk next to the ocean"
+                class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                src="./assets/images/arquitetura/casa2.jpg" />
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 p-1">
+          <div class="overflow-hidden h-full w-full">
+            <a href="./assets/images/arquitetura/casa3.jpg" data-fancybox="gallery">
+              <img alt="a cat laying on top of a sidewalk next to the ocean"
+                class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                src="./assets/images/arquitetura/casa3.jpg" />
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 p-1">
+          <div class="overflow-hidden h-full w-full">
+            <a href="./assets/images/arquitetura/gallery-4.jpg" data-fancybox="gallery">
+              <img alt="a cat laying on top of a sidewalk next to the ocean"
+                class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                src="./assets/images/arquitetura/gallery-4.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</article>
+</main>
+<!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="40" height="40" loading="lazy" alt="Richard home">
+        </a>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">Criado por Raimundo Neto</p>
+
+      </div>
+    </div>
+
+    <div class="footer-bg has-before">
+      <img src="./assets/images/footer-bg.jpg" width="1920" height="1135" loading="lazy" alt="photography"
+        class="img-cover">
+    </div>
+
+  </footer>
+
+   <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Script for the LightBox -->
+  <script>
+    Fancybox.bind("[data-fancybox]", {});
+  </script>
+  <script src="dist/fade_in.js"></script>
+</body>
+
+</html>
